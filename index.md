@@ -2,7 +2,7 @@
 layout: default
 ---
 
-### deathwheadfish (우티난)  
+### deathwheadfish  
 
 
 i don't have anything to show you  
