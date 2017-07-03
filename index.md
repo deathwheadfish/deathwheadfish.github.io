@@ -1,7 +1,8 @@
 ---
 layout: default
 ---
--![It's Me!](http://deathwheadfish.cf/i.jpg)
+[It's Me!](http://deathwheadfish.cf/i.jpg)
+-!
 ### deathwheadfish  
 
 
