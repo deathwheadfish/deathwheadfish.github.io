@@ -1,0 +1,9 @@
+# Site settings
+title: deathwheadfish
+tag_text:
+description:
+
+# Build settings
+markdown: kramdown
+
+exclude: ["README.md"]
