@@ -10,8 +10,10 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/syntax.css">
   <link rel="stylesheet" href="css/solo.css">
+  {% if site.google_analytics and jekyll.environment == 'production' %}
   {% include analytics.html %}
-{% include head.html %}
+  {% endif %}
+  {% include head.html %}
 </head>
 <body>
   <div class="container">
