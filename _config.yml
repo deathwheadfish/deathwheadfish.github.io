@@ -2,6 +2,7 @@
 title: deathwheadfish
 tag_text:
 description:
+google_analytics: UA-102012759-1
 
 # Build settings
 markdown: kramdown
