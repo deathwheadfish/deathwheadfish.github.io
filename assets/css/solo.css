@@ -159,3 +159,11 @@ pre > code {
   font-size: 0.5rem;
   font-style: normal;
 }
+
+li {
+  list-style-type: none;  
+}
+ul {
+  margin-left: 0; 
+  padding-left: 0; 
+}
