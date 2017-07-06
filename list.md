@@ -3,6 +3,9 @@ layout: post
 subtitle: ''
 extlink: ''
 index: true 
+title: list
+permalink: /l/
+description: 
 ---
 <h3 class="title" >Мои статьи</h3>
 
