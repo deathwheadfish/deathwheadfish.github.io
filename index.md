@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-![](../assets/-.jpg)
+![](../assets/'-'.jpg)
 
 ### deathwheadfish  
 
