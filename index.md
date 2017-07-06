@@ -8,4 +8,7 @@ layout: default
 
 i don't have anything to show you  
 
-{% include footer.html %}
+**contact**: deathwheadfish (at) gmail.com   
+
+**social things**:  
+~~[twitter]()~~ . ~~[flickr]()~~ . [instagram](http://instagr.am/deathwheadfish) . [last.fm](http://last.fm/user/deathwheadfish) . ~~[steam]()~~
