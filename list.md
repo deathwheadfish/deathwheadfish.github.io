@@ -2,17 +2,13 @@
 layout: default
 permalink: /l/
 ---
-{% if site.posts.size > 0 %}
-    <ul class="bloglist">
-    {% for post in site.posts | limit: 10 %}
-        <li>
-            <p class="bloglist_time">
-                <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b %-d, %Y'}}</time>
-            </p>
-            <a class="bloglist__link" href="{{ post.url }}">{{ post.title }}</a>
-        </li>
-    {% endfor %}
-    </ul>
-{% else %}
-    <p>No posts yet!</p>
-{% endif %}
+<ul>
+	{% for post in site.posts %}
+	<li>
+		<a href="{{ post.url }}">
+			<time>{{ post.date | date: "%-d %B %Y" }}</time>
+			{{ post.title }}
+		</a>
+	</li>
+	{% endfor %}
+</ul>
