@@ -2,13 +2,8 @@
 layout: post
 subtitle: ''
 extlink: ''
-index: false 
+index: true 
 ---
-
-{% if paginator.page == 1 %}
-  {% include features.html %}
-{% endif %}
-
 <h3 class="title" >Мои статьи</h3>
 
 <ul class="articles-list">
@@ -23,11 +18,5 @@ index: false
           <div class="articles-list__title" data-scroll-reveal="enter ease 0">{{ this_year }}</div>
       {% endif %}
     {% endif %}
-    {% if post.invisible == nil %}
-      <div data-scroll-reveal="enter ease 0">
-        {% include article-snippet.html %}
-      </div>
-    {% endif %}
   {% endfor %}
-  {% include pagination.html %}
 </ul>
