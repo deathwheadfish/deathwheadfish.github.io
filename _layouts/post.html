@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: default
 ---
 <!DOCTYPE html>
@@ -30,4 +30,51 @@ layout: default
   </div>
 </div>
 </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="ru">
+  {% include head.html %}
+  <body>
+    <!-- include top-banner.html -->
+    <div class="wrapper">
+      {% include header.html %}
+      {% if page.disable_mid_banner != true %}
+        {% include mid-banner.html %}
+      {% endif %}
+      <div class="content" id="content">
+        {% if page.group %}<span class="group_title">{{ page.group }}:</span>{% endif %}
+        {% if page.title %}
+          <h1 class="title">{{ page.title }}</h1>
+        {% endif %}
+        {% if page.translation %}
+          <div class="translation">
+            Перевод: <a href="{{ page.translation.link }}">{{ page.translation.author }} — {{ page.translation.title }}</a>
+          </div>
+        {% endif %}
+        {{ content }}
+        {% if page.date %}
+          <div class="content__date">{{ page.date | date: "%-d.%m.%Y" }}</div>
+        {% endif %}
+        {% if page.index != true %}
+          <div class="post-meta">
+            {% include likes.html %}
+            {% if site.disqus %}
+              {% include disqus.html %}
+            {% endif %}
+            {% if site.disable_related != true %}
+              {% include related-posts.html %}
+            {% endif %}
+          </div>
+          {% if page.disable_features != true %}
+            {% include features.html %}
+          {% endif %}
+        {% endif %}
+      </div>
+    </div>
+    {% include footer-banner.html %}
+    {% include scripts.html %}
+    {% if site.google_analytics %}
+      {% include google-analytics.html %}
+    {% endif %}
+  </body>
 </html>
