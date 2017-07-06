@@ -19,5 +19,4 @@ permalink: /l/
       </li>
     {% if forloop.last %}</ul>{% endif %}
     {% endfor %}
-  </ul>
 </div> <!-- /.big-list -->
