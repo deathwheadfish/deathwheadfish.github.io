@@ -3,10 +3,34 @@ layout: default
 title: list
 permalink: /l/
 ---
-{% for post in site.posts %}
-  {% if post.categories contains 'postcategory' %}
-    <h1>Do nothing</h1>
-  {% else %}
-    <h2>{{ post.title }}</h2>
-  {% endif %}
-{% endfor %}
+<link rel="stylesheet" href="../css/blog.css">
+<div class="subheader-container">
+<div class = "inner">
+<nav class = "sub-nav">
+    <a class="{% if page.category == 'blog' %} selected {% endif %}" href="/blog/">时间线</a>
+    <a class="{% if page.category == 'categories' %} selected {% endif %}" href="/blog/categories.html">归档</a>
+    <a class="{% if page.category == 'donate' %} selected {% endif %}" href="/blog/donate.html">捐赠</a>
+</nav>
+</div>
+</div>
+<section class="inner">
+  <ul class="posts">
+    {% for post in site.posts %}
+	  {% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
+	  {% if year != y %}
+		{% assign year = y %}
+		<span class="listing-seperator">{{ y }}</span>
+	  {% endif %}
+    <a class='post-link-in-posts' href="{{ site.url }}{{ post.url }}">
+        <span class='date'>{{ post.date | date_to_string }}</span>
+        <span class='article'>{{ post.title }}</span>
+		<div class="tag-in-index-post">
+        <i class="fa fa-tags"></i>
+          <div class="tag">
+		        {{ post.tags | first }}
+          </div>
+        </div>
+    </a>
+    {% endfor %}
+  </ul>
+</section>
