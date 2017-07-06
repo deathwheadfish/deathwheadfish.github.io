@@ -11,12 +11,14 @@
   <link rel="stylesheet" href="css/syntax.css">
   <link rel="stylesheet" href="css/solo.css">
   {% include analytics.html %}
+  {% include lastfm.html %}
   {% include head.html %}
 </head>
 <body>
   <div class="container">
     <h1><a href="./">{{ site.tag_text }}</a></h1>
     {{ content }}
+    <div class="listening"></div>
   </div>
 {% include scripts.html %}
 </body>
