@@ -4,15 +4,6 @@ title: list
 permalink: /l/
 ---
 <link rel="stylesheet" href="../css/blog.css">
-<div class="subheader-container">
-<div class = "inner">
-<nav class = "sub-nav">
-    <a class="{% if page.category == 'blog' %} selected {% endif %}" href="/blog/">时间线</a>
-    <a class="{% if page.category == 'categories' %} selected {% endif %}" href="/blog/categories.html">归档</a>
-    <a class="{% if page.category == 'donate' %} selected {% endif %}" href="/blog/donate.html">捐赠</a>
-</nav>
-</div>
-</div>
 <section class="inner">
   <ul class="posts">
     {% for post in site.posts %}
