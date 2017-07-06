@@ -7,10 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ site.title }}</title>
   <link href='//fonts.googleapis.com/css?family=Roboto:400,400italic,700' rel='stylesheet' type='text/css'>
-  {% include base.html %}
-  <link rel="stylesheet" href="{{base}}/css/normalize.css">
-  <link rel="stylesheet" href="{{base}}/css/syntax.css">
-  <link rel="stylesheet" href="{{base}}/css/solo.css">
+  <link rel="stylesheet" href="{{ site.url }}/css/normalize.css">
+  <link rel="stylesheet" href="{{ site.url }}/css/syntax.css">
+  <link rel="stylesheet" href="{{ site.url }}/css/solo.css">
   {% include analytics.html %}
   {% include head.html %}
 </head>
@@ -18,7 +17,6 @@
   <div class="container">
     <h1><a href="./">{{ site.tag_text }}</a></h1>
     {{ content }}
-    <div class="listening"></div>
   </div>
 {% include scripts.html %}
 </body>
