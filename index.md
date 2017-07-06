@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-![](./images/i.jpg)
+![](./_.jpg)
 
 ### deathwheadfish  
 
