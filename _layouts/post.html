@@ -7,11 +7,6 @@ layout: default
   {% include head.html %}
 </head>
 <body>
-  {% if page.photo %}
-  <div class="post-photo" style="background-image: url('/images/posts/{{ page.photo }}')">
-  </div>
-  {% endif %}
-
   <div id="container">
     <article>
       <div class="inner">
@@ -36,23 +31,23 @@ layout: default
        </div>
      </div>
 
-  <div class="container">
-    {{ content }}
-  </div>
+     <div class="container">
+      {{ content }}
+    </div>
   </article>
 
-<div class="related">
-          Related Posts
-          <ul>
-            {% for post in site.related_posts limit:3 %}
-              <a href="{{ post.url }}">
-                  <li>
-                  <h3>{{ post.title }}&nbsp;&nbsp;{{ post.date | date_to_string }}</h3>
-                  </li>
-              </a>
-            {% endfor %}
-          </ul>
-</div>
+  <div class="related">
+    <h3>Related Posts</h3>
+    <ul>
+      {% for post in site.related_posts limit:3 %}
+      <a href="{{ post.url }}">
+        <li>
+          <h3>{{ post.title }}&nbsp;&nbsp;{{ post.date | date_to_string }}</h3>
+        </li>
+      </a>
+      {% endfor %}
+    </ul>
+  </div>
 </div>
 </body>
 </html>
