@@ -7,7 +7,7 @@ permalink: /l/
     {% assign currentdate = post.date | date: "%Y" %}
     {% if currentdate != date %}
       {% unless forloop.first %}</ul>{% endunless %}
-      <h1>{{ currentdate }}</h1>
+      <h3>{{ currentdate }}</h3>
       <ul>
       {% assign date = currentdate %}
     {% endif %}
@@ -21,4 +21,4 @@ permalink: /l/
     {% if forloop.last %}</ul>{% endif %}
     {% endfor %}
   </ul>
-</div>
+</div> <!-- /.big-list -->
