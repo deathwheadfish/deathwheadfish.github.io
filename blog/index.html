@@ -5,6 +5,9 @@ extlink: '/blog/'
 index: false 
 ---
 
+{% if paginator.page == 1 %}
+  {% include features.html %}
+{% endif %}
 
 <h3 class="title" >Мои статьи</h3>
 
@@ -28,7 +31,3 @@ index: false
   {% endfor %}
   {% include pagination.html %}
 </ul>
-
-{% if paginator.page == 1 %}
-  {% include features.html %}
-{% endif %}

@@ -21,10 +21,6 @@
         {% endif %}
         {% if page.index != true %}
           <div class="post-meta">
-            {% include likes.html %}
-            {% if site.disqus %}
-              {% include disqus.html %}
-            {% endif %}
             {% if site.disable_related != true %}
               {% include related-posts.html %}
             {% endif %}
