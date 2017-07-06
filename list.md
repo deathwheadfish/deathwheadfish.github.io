@@ -16,7 +16,6 @@ permalink: /l/
         <a href="{{ post.url | relative_url }}">
           {{ post.title }}
         </a>
-        <span class="hang-left">{{ post.date | date: "%-d %b" }}</span>
       </li>
     {% if forloop.last %}</ul>{% endif %}
     {% endfor %}
