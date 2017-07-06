@@ -30,7 +30,7 @@ a {
 
 a:hover, a:focus {
   /*text-decoration: underline;*/
-    position: absolute;
+  position: absolute;
   bottom: 0;
   left: 0;
   display: block;
