@@ -1,6 +1,6 @@
 ---
 layout: photos
 title: Photos
-permalink: /photos/
+permalink: /p/
 description: "ENTER HERE"
 ---
