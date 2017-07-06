@@ -2,11 +2,23 @@
 layout: default
 permalink: /l/
 ---
-{% for post in site.posts %}
-<article class="hentry entry">
-	<h4 class="entry-title">
-		<a href="{{ post.url }}" rel="bookmark">{{ post.title }}</a>
-	</h4>
-	<p>Posted on <time class="published" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date }}</time></p>
-</article>
-{% endfor %}
+<div class="big-list">
+  {% for post in site.posts %}
+    {% assign currentdate = post.date | date: "%Y" %}
+    {% if currentdate != date %}
+      {% unless forloop.first %}</ul>{% endunless %}
+      <h1>{{ currentdate }}</h1>
+      <ul>
+      {% assign date = currentdate %}
+    {% endif %}
+      <li>
+        <span class="hang-right">{{ post.date | date: "%-d %b" }}</span>
+        <a href="{{ post.url | relative_url }}">
+          {{ post.title }}
+        </a>
+        <span class="hang-left">{{ post.date | date: "%-d %b" }}</span>
+      </li>
+    {% if forloop.last %}</ul>{% endif %}
+    {% endfor %}
+  </ul>
+</div>

@@ -6,7 +6,7 @@ ga_id: UA-102012759-1
 paginate: 10
 paginate_path: page/:num
 
-permalink: /:year/:month/:day/:title
+permalink: /l/:year/:month/:day/:title
 
 # Build settings
 markdown: kramdown
