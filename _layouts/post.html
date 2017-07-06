@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
-  {% include headnew.html %}
+  {% include head.html %}
   <body>
     <!-- include top-banner.html -->
     <div class="wrapper">
-      {% include header.html %}
+<!--       {% include header.html %} -->
       <div class="content" id="content">
         {% if page.group %}<span class="group_title">{{ page.group }}:</span>{% endif %}
         {% if page.title %}
@@ -28,6 +28,6 @@
         {% endif %}
       </div>
     </div>
-    {% include scripts.html %}
+<!--     {% include scripts.html %} -->
   </body>
 </html>

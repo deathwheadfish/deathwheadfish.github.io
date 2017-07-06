@@ -7,7 +7,7 @@ title: list
 permalink: /l/
 description: 
 ---
-<h3 class="title" >Мои статьи</h3>
+<h3 class="title" >Заметки</h3>
 
 <ul class="articles-list">
   {% for post in paginator.posts %}
