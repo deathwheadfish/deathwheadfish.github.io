@@ -1,6 +1,6 @@
 ---
 layout: photos
-title: Photos
+title: photos
 permalink: /p/
-description: "ENTER HERE"
+description: 
 ---

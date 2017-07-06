@@ -1,24 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="{{ site.description }}">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ site.title }}</title>
-  <link href='//fonts.googleapis.com/css?family=Roboto:400,400italic,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="../assets/css/normalize.css">
-  <link rel="stylesheet" href="../assets/css/syntax.css">
-  <link rel="stylesheet" href="../assets/css/solo.css">
-  <!-- _include -->
-  {% include analytics.html %}
-  {% include head.html %}
+	{% include head.html %}
 </head>
 <body>
-  <div class="container">
-    <h1><a href="./">{{ site.tag_text }}</a></h1>
-    {{ content }}
-  </div>
-{% include scripts.html %}
+	<div class="container">
+		<h1><a href="./">{{ site.tag_text }}</a></h1>
+		{{ content }}
+	</div>
+	{% include scripts.html %}
 </body>
 </html>
