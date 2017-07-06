@@ -1,35 +1,8 @@
 ---
-layout: post
-subtitle: ''
-extlink: ''
-index: true 
-title: list
+layout: default
 permalink: /l/
-description: 
 ---
-{% if paginator.page == 1 %}
-  {% include features.html %}
-{% endif %}
-
-<h3 class="title" >Мои статьи</h3>
-
-<ul class="articles-list">
-  {% for post in paginator.posts %}
-    {% capture that_year %}{{ this_year || '' }}{% endcapture %}
-    {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
-    {% if this_year != that_year %}
-      {% if !forloop.first %}
-        <div class="articles-list__title" data-scroll-reveal="enter ease 0">{{ this_year }}</div>
-      {% else %}
-        </ul><ul class="articles-list__list">
-          <div class="articles-list__title" data-scroll-reveal="enter ease 0">{{ this_year }}</div>
-      {% endif %}
-    {% endif %}
-    {% if post.invisible == nil %}
-      <div data-scroll-reveal="enter ease 0">
-        {% include article-snippet.html %}
-      </div>
-    {% endif %}
-  {% endfor %}
-  {% include pagination.html %}
-</ul>
+{% for post in site.posts %}	
+    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    <p><small><strong>{{ post.date | date: "%B %e, %Y" }}</strong> . {{ post.category }} . <a href="http://erjjones.github.com{{ post.url }}#disqus_thread"></a></small></p>			
+{% endfor %}	
