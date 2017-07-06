@@ -29,22 +29,7 @@ a {
 }
 
 a:hover, a:focus {
-  /*text-decoration: underline;*/
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-  height: 2px;
-  background-color: #CF2034;
-  content: "";
-  border-bottom: 1px solid #222;
-  -webkit-transform: translate3d(-101%,0,0);
-          transform: translate3d(-101%,0,0);
-  -webkit-transition: -webkit-transform .3s cubic-bezier(0.11, 0.7, 0, 1);
-  transition: -webkit-transform .3s cubic-bezier(0.11, 0.7, 0, 1);
-  transition: transform .3s cubic-bezier(0.11, 0.7, 0, 1);
-  transition: transform .3s cubic-bezier(0.11, 0.7, 0, 1), -webkit-transform .3s cubic-bezier(0.11, 0.7, 0, 1);
+  text-decoration: underline;
 }
 
 h1, h2, h3, h4, h5, h6 {
