@@ -153,8 +153,8 @@ pre > code {
   padding: 0 1rem;
 }
 
-.related {
-  font-size: 0.8rem;
-}
-
 /* custom css */
+
+.related {
+  font-size: 0.5rem;
+}
