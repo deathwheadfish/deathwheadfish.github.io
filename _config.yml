@@ -3,8 +3,8 @@ title: deathwheadfish
 tag_text:
 description:
 ga_id: UA-102012759-1
-paginate: 20
-paginate_path: archive/:num
+paginate: 10
+paginate_path: page/:num
 
 permalink: /:year/:month/:day/:title
 
