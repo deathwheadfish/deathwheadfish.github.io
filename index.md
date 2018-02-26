@@ -1,6 +1,6 @@
 ---
 layout: default
-title: deathwheadfish.cf
+title: home
 ---
 ![](../assets/-.jpg)
 
